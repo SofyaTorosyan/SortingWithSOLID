@@ -15,3 +15,4 @@ const std::string& Sorter::getName() const noexcept
 {
 	return algName;
 }
+
