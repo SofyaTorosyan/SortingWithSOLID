@@ -3,21 +3,31 @@
 #include "../include/Logger.h"
 #include "../include/sorting.h"
 
+const std::vector<int>& randomGenerate(const int size)
+{
+	std::vector<int> vec;
+	for (int i = 0; i < size; ++i)
+	{
+		vec[i] = std::rand() % 100;
+	}
+	return vec;
+}
+
 int main()
 {
 	int size;
 	std::cout << "Input array size: ";
 	std::cin >> size;
-	std::vector<int> arr(size, 0);
+	std::vector<int> arr = randomGenerate(size);
 	std::vector<std::shared_ptr<ISorter>>  sorters;
 	// keeping 3 rd and 5th SOLID principles
 	sorters.push_back(std::make_shared<Sorter>(&bubbleSort, "bubbleSort"));
 	sorters.push_back(std::make_shared<Sorter>(&insertionSort, "insertionSort"));
 
-	std::map<std::string, Duration> sorterToDuration;
 	SortAnalyzer analyzer(sorters);
-	sorterToDuration = analyzer.analyze(arr, size);
+	const std::map<std::string, Duration>& sorterToDuration = analyzer.analyze(arr, size);
 	printDuration(sorterToDuration);
 	
 	return 0;
 }
+
