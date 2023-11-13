@@ -25,7 +25,7 @@ int main()
 	sorters.push_back(std::make_shared<Sorter>(&insertionSort, "insertionSort"));
 	
 	SortAnalyzer analyzer(sorters);
-	const std::map<std::string, Duration>& sorterToDuration = analyzer.analyze(arr, size);
+	const std::multimap<Duration, std::string>& sorterToDuration = analyzer.analyze(arr, size);
 	printDuration(sorterToDuration);
 	
 	return 0;

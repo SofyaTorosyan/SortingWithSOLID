@@ -1,7 +1,9 @@
 #pragma once
+
 #include <map>
 #include <string>
 #include <limits>
+#include <algorithm>
 #include "Timer.h"
 
 struct Duration
@@ -17,4 +19,4 @@ struct Duration
 };
 
 Duration getDuration(const Timer& t);
-std::string getFastestSortingName(const std::map<std::string, Duration>& durations);
+std::string getFastestSortingName(const std::multimap<Duration, std::string>& durations);

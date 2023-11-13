@@ -28,14 +28,8 @@ Duration getDuration(const Timer& t)
 	return Duration(hrs.count(), mins.count(), secs.count());
 }
 
-std::string getFastestSortingName(const std::map<std::string, Duration>& durations)
+std::string getFastestSortingName(const std::multimap<Duration, std::string>& durations)
 {
-	std::string name("");
-	Duration minimum(std::numeric_limits<double>::max(), std::numeric_limits<double>::max(), std::numeric_limits<double>::max());
-	for (const auto& dur : durations)
-	{
-		minimum = dur.second < minimum ? dur.second : minimum;
-		name = dur.first;
-	}
+	const std::string name = std::min_element(durations.begin(), durations.end())->second;
 	return name;
 }
