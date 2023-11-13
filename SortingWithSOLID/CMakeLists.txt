@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.23.0)
 project(Sorting)
 set(SOURCES
-    ./src/sorting.cpp
-    ./src/Sorter.cpp
-    ./src/Timer.cpp
-    ./src/SortAnalyzer.cpp
-    ./src/Duration.cpp
+    ./src/Sorting/sorting.cpp
+    ./src/Sorter/Sorter.cpp
+    ./src/Timer/Timer.cpp
+    ./src/SortAnalyzer/SortAnalyzer.cpp
+    ./src/Duration/Duration.cpp
     ./src/main.cpp
     )
 

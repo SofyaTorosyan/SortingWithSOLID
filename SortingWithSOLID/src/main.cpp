@@ -1,7 +1,7 @@
-#include "../include/SortAnalyzer.h"
-#include "../include/Sorter.h"
-#include "../include/Logger.h"
-#include "../include/sorting.h"
+#include "./SortAnalyzer/SortAnalyzer.h"
+#include "./Sorter/Sorter.h"
+#include "./Logger/Logger.h"
+#include "./Sorting/sorting.h"
 
 const std::vector<int> randomGenerate(const int size)
 {
