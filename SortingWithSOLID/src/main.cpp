@@ -11,8 +11,8 @@ int main()
 	std::vector<int> arr(size, 0);
 	std::vector<std::shared_ptr<ISorter>>  sorters;
 	// keeping 3 rd and 5th SOLID principles
-	sorters.push_back(std::make_shared<Sorter>(arr.data(), size, &bubbleSort, "bubbleSort"));
-	sorters.push_back(std::make_shared<Sorter>(arr.data(), size, &insertionSort, "insertionSort"));
+	sorters.push_back(std::make_shared<Sorter>(&bubbleSort, "bubbleSort"));
+	sorters.push_back(std::make_shared<Sorter>(&insertionSort, "insertionSort"));
 
 	std::map<std::string, Duration> sorterToDuration;
 	SortAnalyzer analyzer(sorters);

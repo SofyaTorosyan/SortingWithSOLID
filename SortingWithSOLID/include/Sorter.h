@@ -5,7 +5,7 @@
 class Sorter : public ISorter
 {	
 public:
-	Sorter(int *arr, int size, void (*fnptr)(int* arr, int size), const std::string& name);
+	Sorter(void (*fnptr)(int* arr, int size), const std::string& name);
 	void sort(int* arr, const int size) override;
 	std::string getName() override;
 private:
