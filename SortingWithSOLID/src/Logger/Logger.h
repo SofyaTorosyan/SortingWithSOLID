@@ -9,7 +9,7 @@
 void printDuration(const std::multimap<Duration, std::string> durations)
 {
 	const std::string fastestSortingName = getFastestSortingName(durations);
-	std::cout << "SortingName     -->   Duration(h : min : sec) \n";
+	std::cout << "SortingName    -->   Duration(h : min : sec) \n";
 	for (const auto& dur : durations)
 	{
 		const auto time = dur.first;
