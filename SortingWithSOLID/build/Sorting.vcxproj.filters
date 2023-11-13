@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\sofya\SortingWithSOLID\src\sorting.cpp">
+    <ClCompile Include="C:\Users\sofya\Sorting\SortingWithSOLID\src\sorting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sofya\SortingWithSOLID\src\Sorter.cpp">
+    <ClCompile Include="C:\Users\sofya\Sorting\SortingWithSOLID\src\Sorter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sofya\SortingWithSOLID\src\Timer.cpp">
+    <ClCompile Include="C:\Users\sofya\Sorting\SortingWithSOLID\src\Timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sofya\SortingWithSOLID\src\SortAnalyzer.cpp">
+    <ClCompile Include="C:\Users\sofya\Sorting\SortingWithSOLID\src\SortAnalyzer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sofya\SortingWithSOLID\src\Duration.cpp">
+    <ClCompile Include="C:\Users\sofya\Sorting\SortingWithSOLID\src\Duration.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\sofya\SortingWithSOLID\src\main.cpp">
+    <ClCompile Include="C:\Users\sofya\Sorting\SortingWithSOLID\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\sofya\SortingWithSOLID\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\sofya\Sorting\SortingWithSOLID\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{3D31FB98-9CCE-3C2F-A5B4-3B453D364B95}</UniqueIdentifier>
+      <UniqueIdentifier>{D8244E95-F46C-3C88-9077-887F6185669C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

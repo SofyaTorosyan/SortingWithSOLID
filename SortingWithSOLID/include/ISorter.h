@@ -5,6 +5,7 @@
 class ISorter
 {
 public:
-	virtual void sort(int* arr, const int size) = 0;
-	virtual std::string getName() = 0;
+	virtual ~ISorter() = default;
+	virtual void sort(int* arr, const int size) const = 0;
+	virtual const std::string& getName() const noexcept = 0;
 };

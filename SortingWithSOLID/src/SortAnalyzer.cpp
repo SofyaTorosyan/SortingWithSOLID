@@ -14,7 +14,7 @@ std::map<std::string, Duration> SortAnalyzer::analyze(std::vector<int>& arr, con
 		std::copy(std::begin(arrCopy), std::end(arrCopy), std::begin(arr));
 		Timer t;
 		sorter->sort(arr.data(), size);
-		sorterToDuration.insert(std::make_pair<std::string, Duration>(sorter->getName(), getDuration(t)));
+		sorterToDuration.insert(std::make_pair(sorter->getName(), getDuration(t)));
 	}
 	return sorterToDuration;
 }

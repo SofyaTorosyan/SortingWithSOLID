@@ -6,12 +6,12 @@ Sorter::Sorter(void (*fnptr)(int *arr, int size), const std::string& name) : alg
 	
 }
 
-void Sorter::sort(int *arr, const int size)
+void Sorter::sort(int *arr, const int size) const
 {
 	alg(arr, size);
 }
 
-std::string Sorter::getName()
+const std::string& Sorter::getName() const noexcept
 {
 	return algName;
 }

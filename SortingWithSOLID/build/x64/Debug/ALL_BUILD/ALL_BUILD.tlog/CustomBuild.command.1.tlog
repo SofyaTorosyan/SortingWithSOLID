@@ -1,6 +1,6 @@
-^C:\USERS\SOFYA\SORTINGWITHSOLID\CMAKELISTS.TXT
+^C:\USERS\SOFYA\SORTING\SORTINGWITHSOLID\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sofya/SortingWithSOLID -BC:/Users/sofya/SortingWithSOLID/build --check-stamp-file C:/Users/sofya/SortingWithSOLID/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sofya/Sorting/SortingWithSOLID -BC:/Users/sofya/Sorting/SortingWithSOLID/build --check-stamp-file C:/Users/sofya/Sorting/SortingWithSOLID/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
