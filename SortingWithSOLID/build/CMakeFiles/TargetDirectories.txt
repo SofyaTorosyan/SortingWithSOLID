@@ -1,3 +1,0 @@
-C:/Users/sofya/SortingWithSOLID/build/CMakeFiles/Sorting.dir
-C:/Users/sofya/SortingWithSOLID/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/sofya/SortingWithSOLID/build/CMakeFiles/ZERO_CHECK.dir
