@@ -1,6 +1,7 @@
 #pragma once
 #include <map>
 #include <string>
+#include <limits>
 #include "Timer.h"
 
 struct Duration

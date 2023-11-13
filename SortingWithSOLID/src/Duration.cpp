@@ -31,8 +31,7 @@ Duration getDuration(const Timer& t)
 std::string getFastestSortingName(const std::map<std::string, Duration>& durations)
 {
 	std::string name("");
-	// change DBL_MAX not in C++ , use std::numeric_limits
-	Duration minimum(DBL_MAX, DBL_MAX, DBL_MAX);
+	Duration minimum(std::numeric_limits<double>::max(), std::numeric_limits<double>::max(), std::numeric_limits<double>::max());
 	for (const auto& dur : durations)
 	{
 		minimum = dur.second < minimum ? dur.second : minimum;
